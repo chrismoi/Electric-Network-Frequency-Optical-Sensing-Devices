@@ -10,6 +10,6 @@ The matrices that hold light intensity information, resulted from the SLIC metho
 
 If you want to run the whole procedure from scratch, you can find the video recording dataset and the ENF signals recorded from both sources [here](https://drive.google.com/drive/folders/1IZZkme26GjhMcxOXbCw56So8LDQyTnLX?usp=sharing)
 
-# Run
+### Run
 - static_experiments.m
 - non-static-experiments.m
