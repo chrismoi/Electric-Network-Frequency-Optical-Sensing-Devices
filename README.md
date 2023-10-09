@@ -1,9 +1,7 @@
 # Electric-Network-Frequency-Optical-Sensing-Devices
 
-## Code for t
+Code to reproduce the figures demonstrated in the paper.
 
-Execute:
--fig_5_2.m
--second_set_figures.m
-
-to reproduce the plots in the thesis.
+### Run
+- static_experiments.m
+- non-static-experiments.m
