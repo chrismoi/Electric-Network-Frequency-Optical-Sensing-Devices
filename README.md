@@ -2,7 +2,7 @@
 
 Code to reproduce the figures demonstrated in the paper.
 
-## Instructions
+## Datasets
 
 Folder 'data' contains the ground truth ENF extracted from the power mains and the photodiode signals, which were recorded using the device we developed.
 
@@ -10,6 +10,9 @@ The matrices that hold light intensity information, resulted from the SLIC metho
 
 If you want to run the whole procedure from scratch, you can find the video recording dataset and the ENF signals recorded from both sources [here](https://drive.google.com/drive/folders/1IZZkme26GjhMcxOXbCw56So8LDQyTnLX?usp=sharing)
 
-### Run
+## Instructions
 - static_experiments.m
 - non-static-experiments.m
+
+## Cite
+...
