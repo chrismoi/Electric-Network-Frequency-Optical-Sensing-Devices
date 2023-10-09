@@ -1,6 +1,6 @@
-Electric-Network-Frequency-Optical-Sensing-Devices
+# Electric-Network-Frequency-Optical-Sensing-Devices
 
-# Code for t
+## Code for t
 
 Execute:
 -fig_5_2.m
