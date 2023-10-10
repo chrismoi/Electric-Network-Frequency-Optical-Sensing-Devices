@@ -3,15 +3,18 @@ clc;clear;
 % Video duration (minutes)
 duration = 1:1:8;
 
-% Estimate ENF for mains and photodiode using spectrum combining
-enf_recordings = audioread('4.exp_HAL_200cm_wall\ENF_2CH.wav');
-[enf_mains_HAL, enf_pd_HAL] = ...
-    spectrum_combining(enf_recordings(:,2), enf_recordings(:,1));
+% Estimate ENF for mains and photodiode using spectrum combining 
+% or load directly the respective arrays stored in 'figure_5.mat'
 
-enf_recordings = audioread('24.exp_INC_200cm_wall\ENF_2CH.wav');
-[enf_mains_INC, enf_pd_INC] = ...
-    spectrum_combining(enf_recordings(:,2), enf_recordings(:,1));
+% enf_recordings = audioread('4.exp_HAL_200cm_wall\ENF_2CH.wav');
+% [enf_mains_HAL, enf_pd_HAL] = ...
+%     spectrum_combining(enf_recordings(:,2), enf_recordings(:,1));
+% 
+% enf_recordings = audioread('24.exp_INC_200cm_wall\ENF_2CH.wav');
+% [enf_mains_INC, enf_pd_INC] = ...
+%     spectrum_combining(enf_recordings(:,2), enf_recordings(:,1));
 
+load('figure_5.mat')
 enf_mains = [enf_mains_HAL; enf_mains_INC];
 enf_pd = [enf_pd_HAL; enf_pd_INC];
 
@@ -95,3 +98,5 @@ ylabel('MCC','Fontsize',14);
 legend('camera (Halogen)','camera (Incandescent)',...
     'photodiode (Halogen)', 'photodiode (Incandescent)')
 ylim([0.9 1]);
+title("MCC between the ENF estimated from both optical sensors' " + ...
+    "recordings and power mains (Figure 5)")
